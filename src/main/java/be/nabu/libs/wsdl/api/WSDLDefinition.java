@@ -13,4 +13,5 @@ public interface WSDLDefinition {
 	public List<Service> getServices();
 	public List<PolicyProvider> getPolicies();
 	public List<WSDLDefinition> getImports();
+	public Double getSoapVersion();
 }
