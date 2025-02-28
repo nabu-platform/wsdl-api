@@ -57,7 +57,7 @@ public class WSDLUtils {
 				}
 			}
 		}
-		else if (definition.getImports() != null) {
+		if (definition.getImports() != null) {
 			for (WSDLDefinition imported : definition.getImports()) {
 				PortType portType = getPortType(imported, namespace, name);
 				if (portType != null) {
